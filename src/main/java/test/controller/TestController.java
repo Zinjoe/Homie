@@ -11,18 +11,17 @@ import javax.servlet.http.HttpSession;
 @WebServlet("/TestController")
 public class TestController extends HttpServlet {
        
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-	   
-		
-			String name =request.getParameter("name");
-			
-			request.setAttribute("nickname", name);
-			
-			request.getRequestDispatcher("/index.jsp").forward(request, response);
-			
-			
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
+
+		String name = request.getParameter("name");
+
+		request.setAttribute("nickname", name);
+
+		request.getRequestDispatcher("/index.jsp").forward(request, response);
+
 	}
 
 }
