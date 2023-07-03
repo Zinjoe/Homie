@@ -9,7 +9,7 @@ public class joeLin {
 	private String aaaa;
 	
 	public static void main(String[] args) {
-		System.out.println("good class");
+		System.out.println("good garbage ");
 	}
 
 }
