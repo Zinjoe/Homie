@@ -1,10 +1,9 @@
 package test.controller;
 
 public class rrrrrrr {
-	
+	private String name = "GG"; 
 	public static void main(String[] args) {
-		System.out.println("GG");
-
+		System.out.println("name");
 	}
-
+	
 }
